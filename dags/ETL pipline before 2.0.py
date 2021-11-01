@@ -22,9 +22,6 @@ with DAG(
         catchup=False,
         tags=['example'],
 ) as dag:
-    dag.doc_md = __doc__
-
-
     def extract(**kwargs):
         ti = kwargs['ti']
         data_string = '{"1001": 301.27, "1002": 433.21, "1003": 502.22}'
