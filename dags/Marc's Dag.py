@@ -26,6 +26,7 @@ with DAG(
         start_date=datetime(2021, 1, 1),
         schedule_interval="@daily",
         catchup=False) as dag:
+
     training_model_A = PythonOperator(
         task_id="training_model_A",
         python_callable=training_model
