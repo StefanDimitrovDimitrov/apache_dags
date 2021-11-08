@@ -17,7 +17,7 @@ default_dag_args = {
 }
 
 with models.DAG(
-        'python_and_bash_with_all_success_trigger',
+        'dag_dummy_operator',
         schedule_interval=datetime.timedelta(days=1),
         default_args=default_dag_args) as dag:
     def greeting():

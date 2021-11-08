@@ -17,7 +17,7 @@ default_dag_args = {
 }
 
 with models.DAG(
-        'python_and_bash_with_all_success_trigger',
+        'dag_one_faild_rule',
         schedule_interval=datetime.timedelta(days=1),
         default_args=default_dag_args) as dag:
     def hello_world():
